@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.mitienda.LoginController"
+            prefHeight="500"
+            prefWidth="800"
+            style="-fx-background-color: linear-gradient(to bottom right, #F8F6FF, #EDE7FF);">
+
+    <children>
+
+        <VBox alignment="CENTER"
+              spacing="18"
+              layoutX="225"
+              layoutY="85"
+              prefWidth="300"
+              styleClass="card">
+
+            <Label text="🛒 MiTienda"
+                   styleClass="titulo"/>
+
+            <Label text="Sistema de Gestión"
+                   style="-fx-text-fill:#7A6EAA;
+                          -fx-font-size:14px;"/>
+
+            <TextField fx:id="txtUsuario"
+                       promptText="👤 Usuario"/>
+
+            <PasswordField fx:id="txtPassword"
+                           promptText="🔒 Contraseña"/>
+
+            <ComboBox fx:id="cbRol"
+                      promptText="Seleccione Rol"/>
+
+            <Button text="Ingresar"
+                    prefWidth="180"
+                    styleClass="btn-save"
+                    onAction="#ingresar"/>
+
+        </VBox>
+
+    </children>
+
+</AnchorPane>
